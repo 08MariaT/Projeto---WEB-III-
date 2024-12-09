@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Detalhar Empréstimo</title>
+</head>
+<body>
+    <%- include("../partials/cabecalho.ejs") %>
+        <div>
+            <b>ID:</b><%= emprestimo.id %>
+        </div>
+        <div>
+            <b>Nome:</b><%= emprestimo.nome %>
+        </div>
+        <div>
+            <b>Valor:</b><%= emprestimo.valor %>
+        </div>
+        <div>
+            <a href="/emprestimos">Voltar para listagem</a>
+        </div>
+        <%- include("../partials/rodape.ejs") %>
+</body>
+</html>

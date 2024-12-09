@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Detalhar Gerente</title>
+</head>
+<body>
+    <%- include("../partials/cabecalho.ejs") %>
+        <div>
+            <b>ID:</b><%= gerente.id %>
+        </div>
+        <div>
+            <b>Nome:</b><%= gerente.nome %>
+        </div>
+        <div>
+            <b>E-mail:</b><%= gerente.email %>
+        </div>
+        <div>
+            <a href="/gerentes">Voltar para listagem</a>
+        </div>
+        <%- include("../partials/rodape.ejs") %>
+</body>
+</html>
