@@ -7,7 +7,7 @@ const auth = require("../middlewares/usuarioAuth");
 
 routes.get("/usuarios", auth, usuarioController.listar);
 routes.post("/usuarios/", usuarioController.cadastrarPost);
-routes.get("/usuarios/cadastrar/:id?", auth,  usuarioController.cadastrarGet);
+routes.get("/usuarios/cadastrar/:id?", usuarioController.cadastrarGet);
 routes.get("/usuarios/remover/:id", auth, usuarioController.remover);
 routes.get("/usuarios/login", usuarioController.loginGet);
 routes.get("/usuarios/logout", usuarioController.logout);
